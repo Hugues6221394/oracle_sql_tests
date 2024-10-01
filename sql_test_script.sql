@@ -352,4 +352,106 @@ SQL> SELECT first_name, last_name
 
 no rows selected
 
+SQL> SELECT 
+    e.emp_id, 
+    e.first_name, 
+    e.last_name, 
+    e.hire_date, 
+    d.dept_name
+FROM 
+    Employees e
+JOIN 
+    Departments d 
+ON 
+    e.dept_id = d.dept_id;
+
+SQL>emp_id | first_name | last_name | hire_date | dept_name
+-------|------------|-----------|-----------|------------
+  101  | John       | Doe       | 2024-01-01| HR
+  102  | Jane       | Smith     | 2023-12-15| Finance
+  103  | Michael    | Brown     | 2022-07-10| IT
+
+SQL>CREATE TABLE EmpDep AS
+SELECT e.emp_id, e.first_name, e.last_name, e.hire_date, d.dept_name
+FROM Employees e
+JOIN Departments d ON e.dept_id = d.dept_id;
+
+Table Created.
+
+SQL> ALTER TABLE Employees
+1 ADD hire_date DATE;
+
+SQL>UPDATE Employees
+1 SET hire_date = '2023-01-01'
+2 WHERE emp_id = 1;
+
+3 UPDATE Employees
+4 SET hire_date = '2022-06-15'
+5 WHERE emp_id = 2;
+
+6 UPDATE Employees
+7 SET hire_date = '2021-12-10'
+8 WHERE emp_id = 3;
+
+SQL> SELECT emp_id, first_name, last_name, hire_date
+1 FROM Employees;
+
+SQL> CREATE TABLE EmpDep AS
+SELECT e.emp_id, e.first_name, e.last_name, e.hire_date, d.dept_name
+FROM Employees e
+JOIN Departments d ON e.dept_id = d.dept_id;
+
+Table Created.
+
+SQL> INSERT INTO Employees (emp_id, first_name, last_name, hire_date, dept_id)
+VALUES (5, 'Kamaliza', 'Gatera', TO_DATE('2023-01-15', 'YYYY-MM-DD'), 1);
+
+INSERT INTO Employees (emp_id, first_name, last_name, hire_date, dept_id)
+VALUES (6, 'John', 'Doe', TO_DATE('2023-01-20', 'YYYY-MM-DD'), 1);
+
+INSERT INTO Employees (emp_id, first_name, last_name, hire_date, dept_id)
+VALUES (7, 'Jane', 'Smith', TO_DATE('2022-06-20', 'YYYY-MM-DD'), 2);
+
+INSERT INTO Employees (emp_id, first_name, last_name, hire_date, dept_id)
+VALUES (8, 'Alice', 'Johnson', TO_DATE('2021-11-05', 'YYYY-MM-DD'), 1);
+
+INSERT INTO Employees (emp_id, first_name, last_name, hire_date, dept_id)
+VALUES (9, 'Bob', 'Brown', TO_DATE('2020-08-30', 'YYYY-MM-DD'), 3);
+
+5 rows inserted.
+
+SQL> CREATE TABLE Experts (
+    emp_id NUMBER PRIMARY KEY,
+    first_name VARCHAR2(50),
+    last_name VARCHAR2(50),
+    hire_date DATE,
+    dept_id NUMBER,
+    FOREIGN KEY (dept_id) REFERENCES Departments(dept_id)
+);
+
+Table created.
+
+SQL> INSERT INTO Experts (emp_id, first_name, last_name, hire_date, dept_id)
+SELECT emp_id, first_name, last_name, hire_date, dept_id
+FROM Employees
+WHERE hire_date < TO_DATE('2023-01-01', 'YYYY-MM-DD');
+
+SQL> CREATE TABLE Junior_Emp (
+    emp_id NUMBER PRIMARY KEY,
+    first_name VARCHAR2(50),
+    last_name VARCHAR2(50),
+    hire_date DATE,
+    dept_id NUMBER,
+    FOREIGN KEY (dept_id) REFERENCES Departments(dept_id)
+);
+
+Table Created.
+
+SQL> INSERT INTO Junior_Emp (emp_id, first_name, last_name, hire_date, dept_id)
+SELECT emp_id, first_name, last_name, hire_date, dept_id
+FROM Employees
+WHERE hire_date >= TO_DATE('2024-01-01', 'YYYY-MM-DD');
+
 SQL>
+
+
