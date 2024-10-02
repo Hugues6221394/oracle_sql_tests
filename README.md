@@ -78,7 +78,7 @@ SCREENSHOTS
 SQL Queries and Results:
 
 1. Creating the Tables:
-![Create Tables]("C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\table creation.png")
+![Create Tables](table creation.png)
 
 2. Inserting Data:
  ![Insert Data]"C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\row insertion query.png")
