@@ -84,9 +84,9 @@ SQL Queries and Results:
  ![Insert Data]"C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\row insertion query.png")
 
 3. Join Query Output:
- ![Join Query Output]("C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\Join Querry and Output.png")
+ ![Join Query Output](Join Querry and Output.png)
 
-4. **Update and Delete Operations**:
+4.Update and Delete Operations:
 
    [Update and Delete Queries](Update and Delete Operation.png)
 
@@ -96,12 +96,12 @@ The conceptual diagram below illustrates the relationship between the `Employees
 
 ![Conceptual Diagram](Conceptual Diagram.png)
 
-## Explanations of the Results and Transactions
+Explanations of the Results and Transactions
 
-1. **Table Creation**: The `Employees` and `Departments` tables were successfully created, defining relationships between employees and their departments. The `dept_id` in the `Employees` table is a foreign key referencing the `Departments` table, enforcing referential integrity.
+1. Table Creation: The `Employees` and `Departments` tables were successfully created, defining relationships between employees and their departments. The `dept_id` in the `Employees` table is a foreign key referencing the `Departments` table, enforcing referential integrity.
 
-2. **Data Insertion**: Several records were inserted into the tables. For instance, employee John Doe was assigned to the HR department, and later moved to the Finance department using an `UPDATE` statement.
+2. Data Insertion: Several records were inserted into the tables. For instance, employee John Doe was assigned to the HR department, and later moved to the Finance department using an `UPDATE` statement.
 
-3. **Joins**: The `JOIN` query combines the `Employees` and `Departments` tables to display employee details along with their respective department names, providing meaningful insights into the organizational structure.
+3. Joins: The `JOIN` query combines the `Employees` and `Departments` tables to display employee details along with their respective department names, providing meaningful insights into the organizational structure.
 
-4. **Update and Delete Operations**: Changes were made to the database through the `UPDATE` and `DELETE` statements, demonstrating how data can be modified or removed efficiently.
+4. Update and Delete Operations: Changes were made to the database through the `UPDATE` and `DELETE` statements, demonstrating how data can be modified or removed efficiently.
