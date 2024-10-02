@@ -73,24 +73,24 @@ The following SQL commands were executed to set up and manage the database:
 10. **TCL (Transaction Control Language)**: 
    - Commands like `COMMIT` and `ROLLBACK` to control database transactions.
 
-## SCREENSHOTS
+SCREENSHOTS
 
-### SQL Queries and Results:
+SQL Queries and Results:
 
-1. **Creating the Tables**:
+1. Creating the Tables:
 ![Create Tables]("C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\table creation.png")
 
-2. **Inserting Data**:
+2. Inserting Data:
  ![Insert Data]"C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\row insertion query.png")
 
-3. **Join Query Output**:
+3. Join Query Output:
  ![Join Query Output]("C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\Join Querry and Output.png")
 
 4. **Update and Delete Operations**:
 
-   ![Update and Delete Queries]("C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\Update and Delete Operation.png")
+   [Update and Delete Queries](Update and Delete Operation.png)
 
-### Conceptual Diagram
+Conceptual Diagram
 
 The conceptual diagram below illustrates the relationship between the `Employees` and `Departments` tables in this system:
 
