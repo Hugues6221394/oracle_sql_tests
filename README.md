@@ -9,7 +9,7 @@ The system is designed to manage and organize employee records and their respect
 
 The following SQL commands were executed to set up and manage the database:
 
-1. **CREATE TABLE**: 
+1. CREATE TABLE: 
    - Used to define the structure of the `Employees` and `Departments` tables.
    - `Employees` includes columns like `emp_id`, `first_name`, `last_name`, `hire_date`, and `dept_id` (Foreign Key).
    - `Departments` includes columns like `dept_id` and `dept_name`.
@@ -29,48 +29,48 @@ The following SQL commands were executed to set up and manage the database:
    );
    ```
 
-2. **INSERT INTO**: 
+2. INSERT INTO: 
    - Used to add data into the `Employees` and `Departments` tables.
 
- **sql commands**
+ sql commands
  
    INSERT INTO Departments (dept_id, dept_name) VALUES (1, 'HR'), (2, 'Finance');
    INSERT INTO Employees (emp_id, first_name, last_name, hire_date, dept_id) VALUES (101, 'John', 'Doe', SYSDATE, 1);
    ```
 
-3. **SELECT**: 
+3. SELECT: 
    - Retrieve data from the tables.
    - Example of a basic `JOIN` query to view employees and their associated departments.
 
- **sql commands**
+ sql commands
    
    SELECT e.emp_id, e.first_name, e.last_name, d.dept_name 
    FROM Employees e
    JOIN Departments d ON e.dept_id = d.dept_id;
    
 
-5. **UPDATE**: 
+5. UPDATE: 
    - Modify existing records in the database.
    
-   **sql commands**
+   sql commands
    
    UPDATE Employees SET dept_id = 2 WHERE emp_id = 101;
  
 
-7. **DELETE**: 
+7. DELETE: 
    - Remove records from the database.
- **sql commands**
+ sql commands
 
    DELETE FROM Employees WHERE emp_id = 101;
 
 
-8. **DDL (Data Definition Language)**: 
+8. DDL (Data Definition Language): 
    - Commands like `CREATE` and `ALTER` to define or modify the database structure.
 
-9. **DML (Data Manipulation Language)**: 
+9. DML (Data Manipulation Language): 
    - Commands like `INSERT`, `UPDATE`, and `DELETE` to manage data.
 
-10. **TCL (Transaction Control Language)**: 
+10. TCL (Transaction Control Language): 
    - Commands like `COMMIT` and `ROLLBACK` to control database transactions.
 
 SCREENSHOTS
@@ -78,13 +78,13 @@ SCREENSHOTS
 SQL Queries and Results:
 
 1. Creating the Tables:
-![Create Tables](table creation.png)
+[Create Tables](table creation.png)
 
 2. Inserting Data:
- ![Insert Data]"C:\Users\user\Desktop\AUCA\PL SQL\Activity 2 Screenshots\row insertion query.png")
+ [Insert Data] ( row insertion query.png)
 
 3. Join Query Output:
- ![Join Query Output](Join Querry and Output.png)
+ [Join Query Output](Join Querry and Output.png)
 
 4.Update and Delete Operations:
 
