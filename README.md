@@ -94,7 +94,7 @@ The following SQL commands were executed to set up and manage the database:
 
 The conceptual diagram below illustrates the relationship between the `Employees` and `Departments` tables in this system:
 
-![Conceptual Diagram](path_to_conceptual_diagram)
+![Conceptual Diagram](Conceptual Diagram.png)
 
 ## Explanations of the Results and Transactions
 
